@@ -3,6 +3,7 @@
   <head>
     <title>My Page</title>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
     <header>
@@ -28,8 +29,15 @@
       </p>
       <section>
         <h2>Thriller</h2>
-        <img src="./thriller.png" alt="Example Thriller Image" />
-        <p>Description of thriller genre...</p>
+        <figure>
+          <img
+            id="thriller-img"
+            src="./thriller.png"
+            alt="Example Thriller Image"
+          />
+          <figcaption class="text-center">Text to be displayed and describe image.</figcaption>
+        </figure>
+        <p class="text-blue">Description of thriller genre...</p>
         <p title="Google Search for Thriller Genre">
           Search and learn more about the
           <a href="https://google.com/search?q=thriller%20genre" target="_blank"
@@ -38,7 +46,7 @@
         </p>
         <div>
           <h3>History</h3>
-          <p>The history of the thriller genre...</p>
+          <p class="text-blue">The history of the thriller genre...</p>
           <!-- unordered list, block level -->
           <ul>
             <li>First</li>
@@ -55,7 +63,7 @@
       </section>
     </main>
     <footer>
-      <p>Ways to contact:</p>
+      <p class="text-blue">Ways to contact:</p>
       <ul>
         <li>Phone: <a href="tel:111-222-333">111-222-3333</a></li>
         <li>Email: <a href="mailto:email.com">email.com</a></li>
