@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Forms</title>
+    <style>
+      input {
+        display: block;
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <label for="name">Name:</label>
+      <input
+        id="name"
+        name="name"
+        type="text"
+        placeholder="Jane Doe"
+        minlength="2"
+        maxlength="6"
+        required
+      />
+      <label for="email">Email:</label>
+      <input
+        id="email"
+        type="email"
+        name="email"
+        placeholder="user@domain.com"
+        required
+      />
+      <label for="optin">Receive weekly emails</label>
+      <input id="optin" type="checkbox" name="optin" />
+      <button type="submit">Signup</button>
+    </form>
+  </body>
+</html>
