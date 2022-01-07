@@ -71,6 +71,12 @@ th, td {
 
 thead > tr {
     border-bottom: 1px solid black;
+    background-color: #0094c8;
+    color: #eee;
+}
+
+tr {
+    border-bottom: 1px solid black;
 }
 
 table {
