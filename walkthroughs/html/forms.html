@@ -14,24 +14,19 @@
   </head>
   <body>
     <form>
-      <label for="name">Name:</label>
-      <input
-        id="name"
-        name="name"
-        type="text"
-        placeholder="Jane Doe"
-        minlength="2"
-        maxlength="6"
-        required
-      />
-      <label for="email">Email:</label>
-      <input
-        id="email"
-        type="email"
-        name="email"
-        placeholder="user@domain.com"
-        required
-      />
+      <fieldset>
+        <legend>Which are you?</legend>
+        <label for="morning">Early Bird</label>
+        <input
+          id="morning"
+          name="riser"
+          type="radio"
+          value="morning"
+          required
+        />
+        <label for="night">Night Owl</label>
+        <input id="night" name="riser" type="radio" value="night" required />
+      </fieldset>
       <label for="optin">Receive weekly emails</label>
       <input id="optin" type="checkbox" name="optin" />
       <button type="submit">Signup</button>
