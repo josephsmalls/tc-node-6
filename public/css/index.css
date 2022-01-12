@@ -1,6 +1,11 @@
 :root {
-  --dark-primary: #5a00ad;
+  --dark-secondary: #133b5c;
   --tc-blue: #0094c8;
+  --tc-gray: #8b8a8d;
+  --dark-primary: #1d2d50;
+  --dark-secondary: #133b5c;
+  --dark-info: #1e5f74;
+  --dark-warning: #fcdab7;
 }
 
 * {
@@ -20,7 +25,12 @@ html {
 .root {
   height: 100vh;
   overflow-y: auto;
-  background: linear-gradient(to top left, var(--dark-primary), 60%, var(--tc-blue));
+  background: linear-gradient(
+    to top left,
+    var(--dark-primary),
+    60%,
+    var(--dark-secondary)
+  );
   position: relative;
 }
 

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox and Grid</title>
+    <link rel="stylesheet" href="flexbox-grid.css" />
+  </head>
+  <body>
+    <div class="d-grid">
+      <header class="grid-item top">
+        <nav>
+          <ul>
+            <li>Home</li>
+            <li>Blogs</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+      </header>
+      <aside class="grid-item side"></aside>
+      <main class="grid-item content">
+        <form>
+          <div class="form-group text-center">
+            <img src="../html/thriller.png" alt="" />
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label
+            ><input
+              type="email"
+              placeholder="user@domain.com"
+              name="email"
+              id="email"
+              class="form-control"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="password" class="form-label">Password</label
+            ><input
+              type="password"
+              name="password"
+              placeholder="*******"
+              id="password"
+              class="form-control"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <button type="submit">Login</button>
+          </div>
+        </form>
+      </main>
+      <div class="grid-item side"></div>
+      <footer class="grid-item bottom">
+        <div class="flex-item">
+          <nav>
+            <ul>
+              <li>Home</li>
+              <li>Blog</li>
+              <li>Contact</li>
+            </ul>
+          </nav>
+        </div>
+        <div class="flex-item"></div>
+        <div class="flex-item">
+          Powered by <span class="power">TrueCoders</span>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

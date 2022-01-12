@@ -1,0 +1,78 @@
+:root {
+  --thick-border-size: 0.5rem;
+  --thin-border-size: 0.1rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0.25rem;
+  overflow-x: hidden;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  border: var(--thick-border-size) solid black;
+  height: 90vmin;
+  width: 90vmin;
+  margin: 3rem auto;
+}
+
+.grid-items {
+  border: var(--thin-border-size) solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.prompt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0.25rem;
+  font-size: 2rem;
+}
+
+.grid-items input {
+  border: none;
+  width: 50%;
+  height: 50%;
+  font-size: 2rem;
+  text-align: center;
+  border-radius: var(--thick-border-size);
+}
+
+#box1,
+#box2,
+#box3,
+#box4,
+#box5,
+#box8,
+#box9,
+#box10,
+#box11 {
+  border-bottom: var(--thick-border-size) solid black;
+}
+
+#box2,
+#box6,
+#box9,
+#box10,
+#box11,
+#box14 {
+  border-right: var(--thick-border-size) solid black;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    width: 600px;
+    height: 600px;
+  }
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Which are you? <sup style="color: red;">*</sup></legend>
+        <label for="morning">Early Bird</label>
+        <input
+          id="morning"
+          name="riser"
+          type="radio"
+          value="morning"
+          required
+        />
+        <label for="night">Night Owl</label>
+        <input id="night" name="riser" type="radio" value="night" required />
+      </fieldset>
+      <label for="optin">Receive weekly emails</label>
+      <input id="optin" type="checkbox" name="optin" />
+      <button type="submit">Signup</button>
+    </form>
+  </body>
+</html>

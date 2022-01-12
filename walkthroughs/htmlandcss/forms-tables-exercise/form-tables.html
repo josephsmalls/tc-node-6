@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms and Tables Exercise</title>
+    <link rel="stylesheet" href="./form-tables.css" />
+  </head>
+  <body>
+    <form>
+      <div class="form-section">
+        <label class="form-label" for="fname">First Name:</label>
+        <input
+          class="d-block"
+          id="fname"
+          type="text"
+          name="fname"
+          placeholder="Jane"
+        />
+      </div>
+      <div class="form-section">
+        <label class="form-label" for="lname">Last Name:</label>
+        <input
+          class="d-block"
+          id="lname"
+          type="text"
+          name="lname"
+          placeholder="Doe"
+        />
+      </div>
+      <div class="form-section">
+        <label class="form-label" for="email">Email:</label>
+        <input
+          class="d-block"
+          id="email"
+          type="email"
+          name="email"
+          placeholder="user@domain.com"
+        />
+      </div>
+      <div class="form-section">
+        <fieldset>
+          <legend class="form-label">Programming Experience</legend>
+          <label class="radio-label" for="beginner_xp">Beginner</label>
+          <input id="beginner_xp" value="beginner" type="radio" name="xp" />
+          <label class="radio-label" for="intermediate_xp">Intermediate</label>
+          <input
+            id="intermediate_xp"
+            value="intermediate"
+            type="radio"
+            name="xp"
+          />
+          <label class="radio-label" for="advanced_xp">Advanced</label>
+          <input id="advanced_xp" value="advanced" type="radio" name="xp" />
+        </fieldset>
+      </div>
+      <div class="form-section">
+        <label class="form-label" for="career">Desired Career:</label>
+        <input
+          class="d-block"
+          id="career"
+          type="text"
+          name="career"
+          placeholder="e.g. Web Developer"
+        />
+      </div>
+      <div class="form-section">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+    <hr />
+    <!-- table -->
+    <!-- thead, tr, th -->
+    <!-- tbody, tr, td -->
+    <table>
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email Address</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ben</td>
+          <td>Bryant</td>
+          <td>bbryant@truecoders.io</td>
+        </tr>
+        <tr>
+          <td>Ben</td>
+          <td>Bryant</td>
+          <td>bbryant@truecoders.io</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
