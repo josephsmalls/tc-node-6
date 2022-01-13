@@ -16,6 +16,8 @@ Can be read as: _Continue repeating until false_
 - condition `()`
 - code block `{}`
 
+`break;` will cause the execution to exit the loop or switch statement
+
 ## For
 
 Use the `for` keyword
