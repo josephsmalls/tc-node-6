@@ -84,6 +84,8 @@ html {
   position: absolute;
   right: 1rem;
   top: 1rem;
+  height: 120px;
+  width: 120px;
 }
 
 .seconds-ring {
