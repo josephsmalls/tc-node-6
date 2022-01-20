@@ -5,41 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS DOM</title>
-    <style>
-      #container {
-        width: 250px;
-        height: 250px;
-        background: lightblue;
-        position: relative;
-      }
-      #box {
-        width: 75px;
-        height: 75px;
-        background: burlywood;
-        position: absolute;
-      }
-    </style>
     <script src="index.js" defer></script>
   </head>
   <body>
     <main id="main">
       <h1>JavaScript DOM</h1>
-      <input type="text" id="input" placeholder="New Title" />
-      <section class="content">
-        <h2></h2>
-        <p></p>
-      </section>
-      <section class="content">
-        <h2></h2>
-        <p></p>
-      </section>
-      <section class="content">
-        <h2></h2>
-        <p></p>
-      </section>
-      <div id="container">
-        <div id="box"></div>
-      </div>
+      <p id="feedback"></p>
+      <label for="input"
+        >Give me a secret key that is at least 8 characters long, include
+        numbers and letters.</label
+      >
+      <input
+        type="text"
+        id="input"
+        title="Give me a secret key that is at least 8 characters long, include numbers and letters."
+        minlength="8"
+        required
+      />
+      <button id="submitBtn">Submit</button>
     </main>
   </body>
 </html>

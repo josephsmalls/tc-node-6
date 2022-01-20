@@ -1,43 +1,41 @@
 console.log("Hello World!");
 
-// Add Hello World as text to all h2 elements
-let h2s = document.getElementsByTagName("h2"); // returns an HTMLCollection
+let input = document.getElementById("input");
+let feedback = document.getElementById("feedback");
+let submitBtn = document.getElementById("submitBtn");
 
-console.log(h2s);
+class TooShortError extends Error {
+  constructor(message, minLength) {
+    super(message); // function call, calls the Error constructor
 
-for (let element of h2s) {
-  element.textContent = "Hello World";
-  element.addEventListener("click", function (event) {
-    element.textContent = "You clicked me!";
-  });
-  element.addEventListener("click", function (event) {
-    console.log("CLICKED an h2");
-  });
-}
-
-let a = document.createElement("a");
-a.href = "https://google.com";
-a.target = "_blank";
-a.textContent = "Google Search";
-
-let main = document.getElementById("main");
-let h1s = document.getElementsByTagName("h1"); // returns an HTMLCollection
-
-// main.removeChild(h1s[0]);
-
-let container = document.getElementById("container");
-let box = document.getElementById("box");
-
-let posX = 0;
-
-function moveLeft() {
-  posX++;
-  box.style.left = posX + "px";
-  if (posX == 175) {
-    clearInterval(animation);
+    this.minLength = minLength;
   }
 }
 
-let animation = setInterval(moveLeft, 10);
+class InvalidRequirementsError extends Error {}
 
-let input = document.getElementById("input");
+submitBtn.addEventListener("click", () => {
+  try {
+    let value = input.value;
+    if (value.length < 8) {
+      throw new TooShortError("Must be at least 8 characters long", 8);
+    }
+
+    if (value.match(/\d/) && value.match(/[A-z]/)) {
+      feedback.textContent = value;
+    } else {
+      throw new InvalidRequirementsError(
+        "You did not include a letter and number."
+      );
+    }
+  } catch (error) {
+    if (
+      error instanceof InvalidRequirementsError ||
+      error instanceof TooShortError
+    ) {
+      feedback.textContent = error.message;
+    } else {
+      feedback.textContent = "Something went wrong. Try again later.";
+    }
+  }
+});
